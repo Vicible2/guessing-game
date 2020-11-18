@@ -12,16 +12,20 @@
         console.log(result);
 
         if (theNumber == result) {
-            alert("Awesome! Your number " + theNumber + " was correct. You can be named many things, hungry not being one of them.")
+            document.body.style.backgroundImage = "url('./../assets/bg.jpg)";
+            alert("Awesome! Your number " + theNumber + " was correct. You can be named many things, hungry not being one of them.");
         } else {
-            alert("Bummer... You guessed " + theNumber + " and the secret number was " + result + ".")
+            document.body.style.backgroundImage = "url('./../assets/rain.jpg')";
+            alert("Bummer... You guessed " + theNumber + " and the secret number was " + result + ".");
         }
+
+       
     });
 
     function secretNumber(min, max) {
         return Math.floor(Math.random() * (max - min) + min);  
       }
-
+      
 
 
 })();
