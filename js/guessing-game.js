@@ -12,7 +12,7 @@
         console.log(result);
 
         if (theNumber == result) {
-            document.body.style.backgroundImage = "url('./../assets/bg.jpg)";
+            document.body.style.backgroundImage = "url('./../assets/party.jpg')";
             alert("Awesome! Your number " + theNumber + " was correct. You can be named many things, hungry not being one of them.");
         } else {
             document.body.style.backgroundImage = "url('./../assets/rain.jpg')";
