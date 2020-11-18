@@ -14,10 +14,13 @@
         if (theNumber == result) {
             document.body.style.backgroundImage = "url('./../assets/party.jpg')";
             alert("Awesome! Your number " + theNumber + " was correct. You can be named many things, hungry not being one of them.");
+        } else if (theNumber > 22 || theNumber < 1 ) {
+            alert("Please stick to a number between 1 & 22, you cheecky bastard ;)");
         } else if (theNumber < result + 2 && theNumber > result - 2){
             alert("So close, but you just missed it! Are you in a class that started on the thirteenth or what?");
 
-        } else {
+        } 
+        else {
             document.body.style.backgroundImage = "url('./../assets/rain.jpg')";
             alert("Bummer... You guessed " + theNumber + " and the secret number was " + result + ".");
         }
